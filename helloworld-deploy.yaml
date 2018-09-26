@@ -3,10 +3,6 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: helloworld
-  annotations:
-    flux.weave.works/locked_user: davey jones <guy@weave.works>
-    flux.weave.works/locked: 'true'
-    flux.weave.works/locked_msg: '"foo"'
 spec:
   minReadySeconds: 5
   replicas: 2
